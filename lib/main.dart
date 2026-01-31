@@ -1,4 +1,9 @@
-import 'package:first_flutter_app/secondPage.dart';
+import 'package:first_flutter_app/pages/animationPage.dart';
+import 'package:first_flutter_app/pages/lottiePage.dart';
+import 'package:first_flutter_app/pages/imagesPage.dart';
+import 'package:first_flutter_app/pages/morePage.dart';
+import 'package:first_flutter_app/pages/moviesPage.dart';
+import 'package:first_flutter_app/pages/secondPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -45,11 +50,60 @@ class _MyHomePageState extends State<MyHomePage> {
             /// Elevated Button
             ElevatedButton(
                 onPressed: (){
-                  Navigator.push((context), MaterialPageRoute(builder: (context) => const SecondPage(),
+                    Navigator.push((context), MaterialPageRoute(builder: (context) => const SecondPage(),
+                    ),
+                  );
+                }, child: const Text('Go to Second Page')
+            ),
+
+            const SizedBox(height:16),
+
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.push((context), MaterialPageRoute(builder: (context) => const ImagesPage(),
                   ),
                   );
-                },
-                child: const Text('Go to Second Page')
+                }, child: const Text('Go to Images Page')
+            ),
+
+            const SizedBox(height:16),
+
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.push((context), MaterialPageRoute(builder: (context) => const LottiePage(),
+                  ),
+                  );
+                }, child: const Text('Go to Lottie Page')
+            ),
+
+            const SizedBox(height:16),
+
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.push((context), MaterialPageRoute(builder: (context) => const AnimationPage(),
+                  ),
+                  );
+                }, child: const Text('Go to Animation Page')
+            ),
+
+            const SizedBox(height:16),
+
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.push((context), MaterialPageRoute(builder: (context) => const MoviesPage(),
+                  ),
+                  );
+                }, child: const Text('Go to Movies Page')
+            ),
+
+            const SizedBox(height:16),
+
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.push((context), MaterialPageRoute(builder: (context) => const MorePage(),
+                  ),
+                  );
+                }, child: const Text('Go to More Page')
             ),
 
             const SizedBox(height:16),
