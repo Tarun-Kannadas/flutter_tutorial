@@ -43,9 +43,9 @@ class _AnimationPageState extends State<AnimationPage> with SingleTickerProvider
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Animations Page"),
-      ),
+      // appBar: AppBar(
+      //   title: const Text("Animations Page"),
+      // ),
       body: Center(
         child: Container(
           decoration: BoxDecoration(

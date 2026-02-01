@@ -1,4 +1,5 @@
 import 'package:first_flutter_app/pages/animationPage.dart';
+import 'package:first_flutter_app/pages/dashboardPage.dart';
 import 'package:first_flutter_app/pages/lottiePage.dart';
 import 'package:first_flutter_app/pages/imagesPage.dart';
 import 'package:first_flutter_app/pages/morePage.dart';
@@ -104,6 +105,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   );
                 }, child: const Text('Go to More Page')
+            ),
+
+            const SizedBox(height:16),
+
+            ElevatedButton(
+                onPressed: (){
+                  Navigator.push((context), MaterialPageRoute(builder: (context) => const DashboardPage(),
+                  ),
+                  );
+                }, child: const Text('Go to Dashboard Page')
             ),
 
             const SizedBox(height:16),
